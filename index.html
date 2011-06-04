@@ -26,7 +26,7 @@
     <br><br>
     {{view App.ProgressBar valueBinding="App.controller.progress"}}
     <br><br>
-    {{#collection JQ.Menu contentBinding="App.people" disabledBinding="App.controller.menuDisabled"}}
+    {{#collection JQ.Menu contentBinding="App.controller.people" disabledBinding="App.controller.menuDisabled"}}
       <a href="#">{{content.name}} {{view JQ.Button labelBinding="parentView.content.name"}}</a>
     {{else}}
       <a href="#">LIST NOT LOADED</a>
